@@ -11,7 +11,7 @@ default_args = {
 }
 
 @dag(
-    dag_id='ieie',
+    dag_id='example_context',
     default_args=default_args,
     description='An example DAG',
     schedule_interval='@daily',
@@ -21,6 +21,7 @@ def example_dag():
 
     @task
     def print_context(**context):
+        # คำสั่งให้รัน dag
         print(context['ds'])
 
     start = DummyOperator(
