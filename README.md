@@ -17,7 +17,7 @@ mkdir -p ./dags ./config ./logs ./plugins ./tests
 - จากนั้นไป IAM -> service accounts สร้างใหม่ซะ เลือก bigQuery -> bigQuery admin -> เลือก storage admin เข้าไปด้วย
 - จากนั้นไปตรง tab เลือก role -> storage object creat, list, delete, get
 - ไปที่ service account -> key -> add key -> json
-- เอา json มาใส่ในนี้ แล้วเรียกใช้
+- เอา json มาใส่ในนี้ แล้วเรียกใช้ เราวางไว้นอกสุดเลยตั้งชื่อว่า bcs... แต่เราลบไฟล์ไปละไม่งั้น push ไม่ได้
 
 - จากนั้นจะได้ directory ด้านใน airflow บนเว็บแล้ว ดูที่ buckets อ่ะ
 - ไปต่อที่ขั้นตอนเอาข้อมูลลง big query ไปดูใน tpuploading/example_upload_local_file_to_bigquery.py เอานะ อธิบายละเอียด
